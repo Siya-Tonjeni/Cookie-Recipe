@@ -79,6 +79,8 @@ button {
     /* height: 550px; */
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    position: relative;
+    z-index: -1;
 }
 
 #details{
@@ -140,7 +142,7 @@ ol > li::marker{
     visibility: hidden;
     width: 200px;
     height: 280px;
-    background-color: grey;
+    background-color:rgba(105, 133, 104, 0.9);;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -193,12 +195,19 @@ hr{
 }
 
 /* css for small screens */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     h1{
         font-size: 30px;
     }
     .column{
         flex-basis: 100%;
         font-size: 14px;
+    }
+    .tooltip button{
+        margin-left: 0;
+        padding: 0.5em 1em;
+    }
+    .tooltip-text{
+        font-size: 12px;
     }
 }
