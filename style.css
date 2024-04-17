@@ -123,6 +123,11 @@ ol > li::marker{
 .cookie-ready-recipe{
     width: 250px;
     height: 350px;
+    margin: 20px 10px 0 20px;
+}
+.author-text{
+    margin-left: 20px;
+    margin-top: 0;
 }
 
 .tooltip{
@@ -175,4 +180,25 @@ hr{
 .recipe-table{
     width:60%;
     height: auto;
+}
+.footer-bottom{
+    background-color: #f9f9f9;
+    padding: 5px 0;
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.footer-bottom p {
+    color: #000;
+}
+
+/* css for small screens */
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 30px;
+    }
+    .column{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
 }
